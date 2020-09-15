@@ -16,8 +16,8 @@
 
     // remote
     "remote.SSH.showLoginTerminal": true,
-    // "remote.SSH.configFile": "/Users/naoki/.ssh/config",
     "remote.SSH.configFile": "~/.ssh/config",
+    "remote.SSH.useLocalServer": false,
 
     // python
     "python.linting.pylintEnabled": false,
@@ -25,4 +25,7 @@
 
     // icon
     "vsicons.dontShowNewVersionMessage": true,
+    "remote.SSH.remotePlatform": {
+        "my-server": "linux"
+    },
 }
