@@ -1,0 +1,28 @@
+{
+    // window
+    "window.zoomLevel": 0,
+
+    // editor
+    "editor.cursorBlinking": "phase",
+    "editor.renderWhitespace": "boundary",
+    "editor.renderControlCharacters": true,
+    "editor.lineNumbers": "interval",
+    "editor.minimap.showSlider": "always",
+    "editor.dragAndDrop": false,
+
+    // workbench
+    "workbench.iconTheme": "vscode-icons",
+    "workbench.startupEditor": "newUntitledFile",
+
+    // remote
+    "remote.SSH.showLoginTerminal": true,
+    // "remote.SSH.configFile": "/Users/naoki/.ssh/config",
+    "remote.SSH.configFile": "~/.ssh/config",
+
+    // python
+    "python.linting.pylintEnabled": false,
+    "python.linting.flake8Enabled": true,
+
+    // icon
+    "vsicons.dontShowNewVersionMessage": true,
+}
