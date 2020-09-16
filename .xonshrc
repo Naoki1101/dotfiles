@@ -2,13 +2,7 @@ import os
 from collections import Counter
 from prompt_toolkit.keys import Keys
 
-PATHS = [
-    "/usr/local/bin/",
-]
-
-for path in PATHS:
-    $PATH.append(path)
-
+$PATH.append("/usr/local/bin/")
 
 $XONSH_COLOR_STYLE = "native"
 $INDENT = "    "
@@ -38,3 +32,4 @@ aliases["rm"] = "rm -i"
 aliases["vx"] = "vi ~/.xonshrc"
 aliases["sbcl"]= "rlwrap sbcl"
 aliases["ju"] = "jupyter notebook"
+aliases["pso"] = "watch -n .5 ps o pid,%cpu,%mem,start,time,command --sort -%cpu"
