@@ -2,6 +2,10 @@ import os
 from collections import Counter
 from prompt_toolkit.keys import Keys
 
+from local import *
+
+xontrib load fzf-widgets
+
 $PATH.append("/usr/local/bin/")
 
 $XONSH_COLOR_STYLE = "native"
