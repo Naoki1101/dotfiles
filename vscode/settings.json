@@ -1,37 +1,54 @@
 {
-    // window
-    "window.zoomLevel": 0,
-
-    // editor
     "editor.cursorBlinking": "phase",
     "editor.renderWhitespace": "boundary",
     "editor.renderControlCharacters": true,
     "editor.lineNumbers": "interval",
     "editor.minimap.showSlider": "always",
     "editor.dragAndDrop": false,
-
     // workbench
     "workbench.iconTheme": "vscode-icons",
     "workbench.startupEditor": "newUntitledFile",
-
     // remote
     "remote.SSH.showLoginTerminal": true,
     "remote.SSH.configFile": "~/.ssh/config",
     "remote.SSH.useLocalServer": false,
-
     // python
-    "python.linting.pylintEnabled": false,
-    "python.linting.flake8Enabled": true,
     "python.linting.enabled": true,
     "python.linting.pylintEnabled": false,
     "python.linting.flake8Enabled": true,
     "python.linting.lintOnSave": true,
+    "python.linting.flake8Args": [
+        "--max-line-length",
+        "150",
+        "--ignore=E203,E402,W503,W504"
+    ],
     "python.formatting.provider": "black",
     "editor.formatOnSave": true,
-
     // icon
     "vsicons.dontShowNewVersionMessage": true,
     "remote.SSH.remotePlatform": {
-        "my-server": "linux"
+        "my-server": "linux",
+        "dev-server": "linux",
+        "keiba-server": "linux"
     },
+    "terminal.integrated.inheritEnv": false,
+    "autoDocstring.docstringFormat": "numpy",
+    "editor.defaultFormatter": "ms-python.python",
+    "workbench.editorAssociations": {
+        "*.ipynb": "jupyter-notebook"
+    },
+    "notebook.cellToolbarLocation": {
+        "default": "right",
+        "jupyter-notebook": "left"
+    },
+    "security.workspace.trust.enabled": false,
+    "mssql.connections": [
+        {
+            "server": "{{put-server-name-here}}",
+            "database": "{{put-database-name-here}}",
+            "user": "{{put-username-here}}",
+            "password": ""
+        }
+    ],
+    "bracketPairColorizer.depreciation-notice": false,
 }
