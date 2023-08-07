@@ -6,6 +6,9 @@ mechatroner.rainbow-csv
 ms-azuretools.vscode-docker
 ms-mssql.mssql
 ms-python.python
+ms-python.black-formatter
+ms-python.flake8
+ms-python.isort
 ms-vscode-remote.remote-containers
 ms-vscode-remote.remote-ssh
 ms-vscode-remote.remote-ssh-edit
@@ -13,3 +16,4 @@ ms-vscode-remote.remote-wsl
 ms-vscode-remote.vscode-remote-extensionpack
 shardulm94.trailing-spaces
 vscode-icons-team.vscode-icons
+mutantdino.resourcemonitor
