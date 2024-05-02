@@ -17,8 +17,8 @@ if [ -e ~/Library/Application\ Support/Code/User ]; then
     mv settings.json settings.json.bak
     mv keybindings.json keybindings.json.bak
 
-    ln -is ~/dotfiles/vscode/settings.json
-    ln -is ~/dotfiles/vscode/keybindings.json
+    ln -is ~/dotfiles/common/vscode/settings.json
+    ln -is ~/dotfiles/common/vscode/keybindings.json
 
     for extension in `cat ~/dotfiles/common/vscode/extensions.txt`; do
         code --install-extension $extension
