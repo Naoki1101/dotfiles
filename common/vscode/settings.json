@@ -56,5 +56,6 @@
       "editor.selectionBackground": "#00ff0060"
     },
     "editor.stickyScroll.enabled": true,
-    "editor.hover.sticky": true
+    "editor.hover.sticky": true,
+    "workbench.iconTheme": "vscode-icons"
   }
