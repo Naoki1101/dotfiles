@@ -8,7 +8,4 @@ ln -sf "${PWD}/common/git/.gitignore_global" "${HOME}"
 ln -sf "${PWD}/common/xonsh/.xonshrc" "${HOME}"
 
 # zsh
-ln -sf "${PWD}/ubuntu/bash/.zprofile" "${HOME}"
-
-# vscode
-bash ./common/vscode/setup.sh
+ln -sf "${PWD}/ubuntu/bash/.bash_profile" "${HOME}"
