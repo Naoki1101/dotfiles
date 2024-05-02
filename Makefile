@@ -33,3 +33,6 @@ install/xonsh:
 
 setup/mac: install/brew install/pyenv install/xonsh
 	bash mac/setup.sh
+
+setup/ubuntu:
+	bash ubuntu/setup.sh
