@@ -5,8 +5,10 @@
     "editor.accessibilitySupport": "off",
     "editor.bracketPairColorization.enabled": false,
     "editor.detectIndentation": true,
+    "editor.dragAndDrop": false,
     "editor.inlayHints.enabled": "onUnlessPressed",
     "editor.inlineSuggest.enabled": true,
+    "editor.lineNumbers": "interval",
     "editor.minimap.enabled": false,
     "editor.tabCompletion": "on",
     "editor.tabSize": 4,
@@ -18,6 +20,9 @@
       "markdown": true
     },
     "html.format.wrapLineLength": 150,
+    // remote ssh
+    "remote.SSH.path": "/usr/bin/ssh",
+    "remote.SSH.showLoginTerminal": true,
     "remote.SSH.useLocalServer": false,
     "security.workspace.trust.untrustedFiles": "open",
     "settingsSync.ignoredExtensions": [],
@@ -56,9 +61,5 @@
     },
     "editor.stickyScroll.enabled": true,
     "editor.hover.sticky": true,
-    "workbench.iconTheme": "vscode-icons",
-    "remote.SSH.path": "/usr/bin/ssh",
-    "remote.SSH.remotePlatform": {
-      "my-server": "linux"
-    }
+    "workbench.iconTheme": "vscode-icons"
   }
