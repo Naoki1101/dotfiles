@@ -1,5 +1,5 @@
 # homebrew
-eval "$(/opt/homebrew/bin/brew shellenv)"
+eval $(/opt/homebrew/bin/brew shellenv)
 
 # pyenv
 export PYENV_ROOT="$HOME/.pyenv"

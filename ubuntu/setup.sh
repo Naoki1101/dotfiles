@@ -7,5 +7,5 @@ ln -sf "${PWD}/common/git/.gitignore_global" "${HOME}"
 # # xonsh
 ln -sf "${PWD}/common/xonsh/.xonshrc" "${HOME}"
 
-# zsh
+# bash
 ln -sf "${PWD}/ubuntu/bash/.bash_profile" "${HOME}"
