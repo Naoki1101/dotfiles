@@ -4,5 +4,5 @@ my dotfiles
 
 ## Installation
 ```
-$ make setup/mac
+$ make mac
 ```
