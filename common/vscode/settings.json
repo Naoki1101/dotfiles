@@ -20,8 +20,6 @@
       "markdown": true
     },
     "html.format.wrapLineLength": 150,
-    // remote ssh
-    "remote.SSH.path": "/usr/bin/ssh",
     "remote.SSH.showLoginTerminal": true,
     "remote.SSH.useLocalServer": false,
     "security.workspace.trust.untrustedFiles": "open",
