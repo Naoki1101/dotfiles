@@ -1,6 +1,6 @@
-HOMEBREW       := ${shell which brew}
-PYENV          := ${shell which pyenv}
-PYTHON_VERSION := 3.11.8
+MAC_HOMEBREW       := ${shell which brew}
+MAC_PYENV          := ${shell which pyenv}
+MAC_PYTHON_VERSION := 3.11.8
 
 
 ############################################################
@@ -12,10 +12,10 @@ PYTHON_VERSION := 3.11.8
 install/brew:
 	/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 
-install/pyenv:
-	${HOMEBREW} install pyenv
-	${PYENV} install ${PYTHON_VERSION}
-	${PYENV} global ${PYTHON_VERSION}
+install/pyenv/mac:
+	${MAC_HOMEBREW} install pyenv
+	${MAC_PYENV} install ${MAC_PYTHON_VERSION}
+	${MAC_PYENV} global ${MAC_PYTHON_VERSION}
 
 
 ############################################################
@@ -23,5 +23,5 @@ install/pyenv:
 ############################################################
 .PHONY: setup/*
 
-setup/mac: install/brew install/pyenv
+setup/mac: install/brew install/pyenv/mac
 	bash mac/setup.sh
