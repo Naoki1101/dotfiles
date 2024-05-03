@@ -57,5 +57,6 @@
     },
     "editor.stickyScroll.enabled": true,
     "editor.hover.sticky": true,
-    "workbench.iconTheme": "vscode-icons"
+    "workbench.iconTheme": "vscode-icons",
+    "git.ignoreMissingGitWarning": true
   }
