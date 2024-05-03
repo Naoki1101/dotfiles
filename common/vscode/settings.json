@@ -57,7 +57,6 @@
     "editor.stickyScroll.enabled": true,
     "editor.hover.sticky": true,
     "workbench.iconTheme": "vscode-icons",
-    "git.ignoreMissingGitWarning": true,
     "remote.SSH.path": "/usr/bin/ssh",
     "remote.SSH.remotePlatform": {
       "my-server": "linux"
