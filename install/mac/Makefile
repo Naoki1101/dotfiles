@@ -1,6 +1,8 @@
 MAC_HOMEBREW       := ${shell which brew}
 MAC_PYENV          := ${shell which pyenv}
-MAC_PYTHON_VERSION := 3.11.8
+MAC_PYTHON_VERSION := 3.12.2
+
+VSCODE_SETTING_DIR := ${HOME}/Library/Application\ Support/Code/User
 
 
 ############################################################
@@ -8,14 +10,21 @@ MAC_PYTHON_VERSION := 3.11.8
 ############################################################
 .PHONY: install/*
 
-# https://brew.sh/
+# homebrew
 install/brew:
 	/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 
-install/pyenv/mac:
-	${MAC_HOMEBREW} install pyenv
+install/brew-packages: install/brew
+	${MAC_HOMEBREW} bundle --file="config/homebrew/Brewfile"
+
+# pyenv
+install/python/mac:
 	${MAC_PYENV} install ${MAC_PYTHON_VERSION}
 	${MAC_PYENV} global ${MAC_PYTHON_VERSION}
+
+# vscode
+install/vscode-extensions:
+	bash install/common/vscode.sh
 
 
 ############################################################
@@ -23,5 +32,8 @@ install/pyenv/mac:
 ############################################################
 .PHONY: setup/*
 
-setup/mac: install/brew install/pyenv/mac
-	bash mac/setup.sh
+setup/mac:
+	$(MAKE) install/brew-packages
+	$(MAKE) install/python/mac
+	$(MAKE) install/vscode-extensions
+	bash install/link.sh

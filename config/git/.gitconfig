@@ -1,0 +1,42 @@
+[alias]
+  st = status
+  ch = checkout
+  br = branch
+  cm = commit
+  ft = fetch
+  pl = pull
+  ps = push
+
+[core]
+    pager = delta
+
+[include]
+  path = ~/.gitconfig.local
+
+[init]
+    defaultBranch = main
+
+[interactive]
+    diffFilter = delta --color-only
+
+[delta]
+    navigate = true
+    light = false
+    side-by-side = true
+    line-numbers = true
+
+[merge]
+    conflictstyle = diff3
+
+[diff]
+    colorMoved = default
+    algorithm = histogram
+
+
+[push]
+    default = simple
+    followTags = true
+    useForceIncludes = true
+
+[push]
+  default = current

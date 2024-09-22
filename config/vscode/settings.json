@@ -1,0 +1,77 @@
+{
+  "autoDocstring.docstringFormat": "google",
+  "debug.console.fontSize": 16,
+  "editor.acceptSuggestionOnEnter": "off",
+  "editor.accessibilitySupport": "off",
+  "editor.bracketPairColorization.enabled": false,
+  "editor.detectIndentation": true,
+  "editor.dragAndDrop": false,
+  "editor.inlayHints.enabled": "onUnlessPressed",
+  "editor.inlineSuggest.enabled": true,
+  "editor.lineNumbers": "interval",
+  "editor.minimap.enabled": false,
+  "editor.tabCompletion": "on",
+  "editor.tabSize": 4,
+  "git.autofetch": true,
+  "git.confirmSync": false,
+  "git.enableSmartCommit": true,
+  "git.ignoreMissingGitWarning": true,
+  "git.openRepositoryInParentFolders": "never",
+  "github.copilot.editor.enableAutoCompletions": true,
+  "github.copilot.enable": {
+    "*": true,
+    "markdown": true
+  },
+  "html.format.wrapLineLength": 150,
+  "remote.autoForwardPortsSource": "hybrid",
+  "remote.SSH.showLoginTerminal": true,
+  "remote.SSH.useLocalServer": false,
+  "remote.SSH.remotePlatform": {
+    "my-server": "linux"
+  },
+  "security.workspace.trust.untrustedFiles": "open",
+  "settingsSync.ignoredExtensions": [],
+  "terminal.integrated.enableMultiLinePasteWarning": "never",
+  "workbench.colorTheme": "Mix Night blue",
+  "workbench.settings.useSplitJSON": false,
+  "workbench.panel.defaultLocation": "bottom",
+  "terminal.integrated.env.osx": {
+    "CW_NEW_SESSION": "1"
+  },
+  "terminal.integrated.fontFamily": "Hack Nerd Font",
+  "terminal.integrated.defaultProfile.osx": "zsh",
+  "terminal.integrated.defaultProfile.linux": "zsh",
+  "[yaml]": {
+    "editor.defaultFormatter": "redhat.vscode-yaml",
+    "editor.insertSpaces": true,
+    "editor.tabSize": 2,
+    "editor.autoIndent": "advanced",
+    "editor.formatOnSave": true
+  },
+  "[json]": {
+    "editor.insertSpaces": true,
+    "editor.tabSize": 2,
+    "editor.autoIndent": "advanced",
+    "editor.formatOnSave": true
+  },
+  "json.format.enable": true,
+  "yaml.format.enable": true,
+  "[dockerfile]": {
+    "editor.defaultFormatter": "ms-azuretools.vscode-docker"
+  },
+  "workbench.colorCustomizations": {
+    "editor.selectionHighlightBackground": "#ce040470",
+    "editor.selectionBackground": "#00ff0060",
+    "errorLens.errorForeground": "#ff0000",
+    "errorLens.warningForeground": "#e5f102",
+    "errorLens.hintForeground": "#2faf64",
+    "errorLens.infoForeground": "#00b7e4"
+  },
+  "editor.stickyScroll.enabled": true,
+  "editor.hover.sticky": true,
+  "workbench.iconTheme": "vscode-icons",
+  "vsicons.dontShowNewVersionMessage": true,
+  "workbench.startupEditor": "none",
+  "jupyter.askForKernelRestart": false,
+  "notebook.output.textLineLimit": 100
+}

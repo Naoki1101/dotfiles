@@ -1,6 +1,7 @@
 charliermarsh.ruff
 eamodio.gitlens
 github.copilot
+github.copilot-chat
 ionutvmi.path-autocomplete
 mechatroner.rainbow-csv
 ms-azuretools.vscode-docker
@@ -16,4 +17,5 @@ mutantdino.resourcemonitor
 njpwerner.autodocstring
 redhat.vscode-yaml
 shardulm94.trailing-spaces
+tamasfe.even-better-toml
 vscode-icons-team.vscode-icons

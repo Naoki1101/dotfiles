@@ -1,0 +1,40 @@
+format = """
+$directory\
+\n$character
+"""
+
+right_format = """
+$git_branch\
+$git_status\
+$git_metrics
+"""
+
+[directory]
+format = "[$path]($style)"
+truncation_length = 5
+truncate_to_repo = false
+truncation_symbol = "…/"
+style = "white"
+
+[git_branch]
+format = "[$branch(:$remote_branch)]($style) "
+style = "purple"
+
+[git_status]
+format = '([$all_status$ahead_behind]($style) )'
+conflicted = ''
+ahead = ''
+behind = ''
+diverged = ''
+up_to_date = '✓'
+untracked = ''
+stashed = ''
+modified = '🔥'
+staged = ''
+renamed = ''
+deleted = ''
+
+[git_metrics]
+disabled = false
+added_style = "green"
+deleted_style = "red"
