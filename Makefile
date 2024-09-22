@@ -1,5 +1,5 @@
 include install/mac/Makefile
-# include install/ubuntu/Makefile
+include install/ubuntu/Makefile
 
 ############################################################
 # setup
@@ -7,4 +7,4 @@ include install/mac/Makefile
 .PHONY: setup/*
 
 mac: setup/mac
-# ubuntu: setup/ubuntu   # そのうち実装する予定
+ubuntu: setup/ubuntu   # 実装途中
