@@ -18,11 +18,16 @@ install/brew:
 install/brew-packages: install/brew
 	${MAC_HOMEBREW} bundle --file="config/homebrew/Brewfile"
 
+install/vscode-extensions:
+	bash install/common/command/vscode.sh
+
 ############################################################
 # setup
 ############################################################
 .PHONY: setup/*
 
-setup/mac: setup/common
+setup/mac:
+	$(MAKE) setup/common
 	$(MAKE) install/brew-packages
+	$(MAKE) install/vscode-extensions
 	bash install/link.sh

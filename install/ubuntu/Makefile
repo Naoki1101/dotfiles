@@ -16,7 +16,8 @@ install/sheldon:
 ############################################################
 .PHONY: setup/*
 
-setup/ubuntu: setup/common
+setup/ubuntu:
+	$(MAKE) setup/common
 	$(MAKE) install/starship
 	$(MAKE) install/sheldon
 	bash install/link.sh

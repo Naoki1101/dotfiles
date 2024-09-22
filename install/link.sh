@@ -58,7 +58,7 @@ ln -sf "${PWD}/config/starship/starship.toml" "${CONFIG_DIR}/starship/starship.t
 if [ "$(uname -s)" == "Darwin" ]; then
   readonly VSCODE_SETTING_DIR="${HOME}/Library/Application\ Support/Code/User"
 else
-  readonly VSCODE_SETTING_DIR="${CONFIG_DIR}/Code/User"
+  readonly VSCODE_SETTING_DIR="${HOME}/.vscode-server/data/Machine"
 fi
 if [ ! -d "${VSCODE_SETTING_DIR}" ]; then
     mkdir -p "${VSCODE_SETTING_DIR}"

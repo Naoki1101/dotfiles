@@ -18,16 +18,9 @@ install/mise-tools: install/mise
 	mise install -y
 
 
-# ----------------------------------------------------------
-# vscode
-install/vscode-extensions:
-	bash install/common/command/vscode.sh
-
-
 ############################################################
 # setup
 ############################################################
 setup/common:
 	$(MAKE) install/gh-extensions
 	$(MAKE) install/mise-tools
-	$(MAKE) install/vscode-extensions
