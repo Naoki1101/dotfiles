@@ -1,3 +1,5 @@
+include install/common/Makefile
+
 ############################################################
 # install
 ############################################################
@@ -14,7 +16,7 @@ install/sheldon:
 ############################################################
 .PHONY: setup/*
 
-setup/ubuntu:
+setup/ubuntu: setup/common
 	$(MAKE) install/starship
 	$(MAKE) install/sheldon
 	bash install/link.sh
