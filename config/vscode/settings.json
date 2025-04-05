@@ -32,7 +32,7 @@
   "security.workspace.trust.untrustedFiles": "open",
   "settingsSync.ignoredExtensions": [],
   "terminal.integrated.enableMultiLinePasteWarning": "never",
-  "workbench.colorTheme": "Mix Night blue",
+  "workbench.colorTheme": "Default Dark Modern",
   "workbench.settings.useSplitJSON": false,
   "workbench.panel.defaultLocation": "bottom",
   "terminal.integrated.env.osx": {
@@ -73,5 +73,6 @@
   "vsicons.dontShowNewVersionMessage": true,
   "workbench.startupEditor": "none",
   "jupyter.askForKernelRestart": false,
-  "notebook.output.textLineLimit": 100
+  "notebook.output.textLineLimit": 100,
+  "github.copilot.chat.localeOverride": "ja"
 }
