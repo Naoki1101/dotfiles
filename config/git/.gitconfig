@@ -9,7 +9,6 @@
 
 [core]
   pager = delta
-  editor = vi
 
 [include]
   path = ~/.gitconfig.local
@@ -41,5 +40,3 @@
 
 [push]
   default = current
-[pull]
-	rebase = false
