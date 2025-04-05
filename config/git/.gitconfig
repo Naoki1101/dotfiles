@@ -34,7 +34,6 @@
   algorithm = histogram
 
 [push]
-  default = current
   followTags = true
   useForceIncludes = true
   autoSetupRemote = true
