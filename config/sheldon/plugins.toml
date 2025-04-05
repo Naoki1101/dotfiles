@@ -3,6 +3,9 @@ shell = "zsh"
 [plugins.fast-syntax-highlighting]
 github = "zdharma/fast-syntax-highlighting"
 
+[plugins.zsh-abbr]
+github = "olets/zsh-abbr"
+
 [plugins.zsh-autosuggestions]
 github = "zsh-users/zsh-autosuggestions"
 
