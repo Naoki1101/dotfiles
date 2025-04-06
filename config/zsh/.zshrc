@@ -15,3 +15,8 @@ alias act='act --container-architecture linux/amd64'
 
 # 新規追加
 abbr -S ops='eval $(op signin)'
+abbr -S ghbr='gh branch'
+abbr -S ghdh='gh dash'
+abbr -S ghp='gh poi'
+abbr -S ghex='gh copilot explain'
+abbr -S ghsg='gh copilot suggest'
