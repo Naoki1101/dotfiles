@@ -5,6 +5,9 @@
 
 # ----------------------------------------------------------
 # gh
+install/gh-completion:
+	bash install/common/command/gh_completion.sh
+
 install/gh-extensions:
 	bash install/common/command/gh_extension.sh
 
@@ -22,5 +25,6 @@ install/mise-tools: install/mise
 # setup
 ############################################################
 setup/common:
+	$(MAKE) install/gh-completion
 	$(MAKE) install/gh-extensions
 	$(MAKE) install/mise-tools
